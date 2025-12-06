@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "+jBc/j5ksA0=",
+  "success": true,
+  "projectFilePath": "/Users/pavelvilkov/Desktop/MyProject/testtasks/NewTestTask/RightCodeTestTask/src/UserService/src/UserService.Application/UserService.Application.csproj",
+  "expectedPackageFiles": [
+    "/Users/pavelvilkov/.nuget/packages/bcrypt.net-next/4.0.3/bcrypt.net-next.4.0.3.nupkg.sha512",
+    "/Users/pavelvilkov/.nuget/packages/dapper/2.1.35/dapper.2.1.35.nupkg.sha512",
+    "/Users/pavelvilkov/.nuget/packages/mediatr/12.2.0/mediatr.12.2.0.nupkg.sha512",
+    "/Users/pavelvilkov/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
+    "/Users/pavelvilkov/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "/Users/pavelvilkov/.nuget/packages/refit/7.0.0/refit.7.0.0.nupkg.sha512",
+    "/Users/pavelvilkov/.nuget/packages/system.net.http.json/7.0.1/system.net.http.json.7.0.1.nupkg.sha512",
+    "/Users/pavelvilkov/.nuget/packages/system.text.encodings.web/7.0.0/system.text.encodings.web.7.0.0.nupkg.sha512",
+    "/Users/pavelvilkov/.nuget/packages/system.text.json/7.0.3/system.text.json.7.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

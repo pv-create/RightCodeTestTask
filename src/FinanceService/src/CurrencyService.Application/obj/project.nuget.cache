@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "dgSpecHash": "gsZag3Oyo1E=",
+  "success": true,
+  "projectFilePath": "/Users/pavelvilkov/Desktop/MyProject/testtasks/NewTestTask/RightCodeTestTask/src/FinanceService/src/CurrencyService.Application/CurrencyService.Application.csproj",
+  "expectedPackageFiles": [
+    "/Users/pavelvilkov/.nuget/packages/dapper/2.1.35/dapper.2.1.35.nupkg.sha512",
+    "/Users/pavelvilkov/.nuget/packages/mediatr/12.2.0/mediatr.12.2.0.nupkg.sha512",
+    "/Users/pavelvilkov/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
+    "/Users/pavelvilkov/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "/Users/pavelvilkov/.nuget/packages/refit/9.0.2/refit.9.0.2.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "CurrencyService.Application depends on Refit (>= 8.0.18) but Refit 8.0.18 was not found. Refit 9.0.2 was resolved instead.",
+      "libraryId": "Refit",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
+}

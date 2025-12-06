@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.1.35" />
+    <PackageReference Include="MediatR" Version="12.2.0" />
+    <PackageReference Include="Refit" Version="8.0.18" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\\CurrencyService.Domain\\CurrencyService.Domain.csproj" />
+    <ProjectReference Include="..\\..\\..\\Shared\\Shared.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Abstractions\" />
+    <Folder Include="Features\" />
+  </ItemGroup>
+</Project>
