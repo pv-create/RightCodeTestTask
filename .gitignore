@@ -1,0 +1,32 @@
+# Build artifacts
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# VS Code / Rider
+.vscode/
+.idea/
+*.DotSettings
+
+# Logs
+*.log
+
+# Resharper / JetBrains
+_ReSharper*/
+*.ReSharper*/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# NuGet
+*.nupkg
+packages/
+
+# Docker
+.docker/
