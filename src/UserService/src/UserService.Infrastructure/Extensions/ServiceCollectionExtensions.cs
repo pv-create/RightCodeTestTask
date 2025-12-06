@@ -17,7 +17,14 @@ public static class ServiceCollectionExtensions
         configuration.GetSection(DatabaseOptions.SectionName).Bind(dbOptions);
 
         services.AddDbContext<UserDbContext>(options =>
-            options.UseNpgsql(dbOptions.ToConnectionString()));
+        {
+            var assembly = typeof(UserDbContext).Assembly.GetName().Name;
+            options.UseNpgsql(dbOptions.ToConnectionString(), b =>
+            {
+                b.MigrationsAssembly(assembly);
+                b.MigrationsHistoryTable("__EFMigrationsHistory_User");
+            });
+        });
 
         services.AddScoped<IUserWriteRepository, UserWriteRepository>();
         services.AddScoped<IUserReadRepository>(_ => new UserReadRepository(dbOptions.ToConnectionString()));

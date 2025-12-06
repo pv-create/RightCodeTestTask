@@ -16,7 +16,14 @@ public static class ServiceCollectionExtensions
         configuration.GetSection(DatabaseOptions.SectionName).Bind(dbOptions);
 
         services.AddDbContext<CurrencyDbContext>(options =>
-            options.UseNpgsql(dbOptions.ToConnectionString()));
+        {
+            var assembly = typeof(CurrencyDbContext).Assembly.GetName().Name;
+            options.UseNpgsql(dbOptions.ToConnectionString(), b =>
+            {
+                b.MigrationsAssembly(assembly);
+                b.MigrationsHistoryTable("__EFMigrationsHistory_Currency");
+            });
+        });
 
         services.AddScoped<ICurrencyWriteRepository, CurrencyWriteRepository>();
         services.AddScoped<ICurrencyReadRepository>(_ => new CurrencyReadRepository(dbOptions.ToConnectionString()));
