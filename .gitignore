@@ -1,6 +1,8 @@
 # Build artifacts
 bin/
 obj/
+**/bin/
+**/obj/
 
 # User-specific files
 *.user
@@ -30,3 +32,7 @@ packages/
 
 # Docker
 .docker/
+
+# VS artifacts
+.vs/
+TestResult*/
